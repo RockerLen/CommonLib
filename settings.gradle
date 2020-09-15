@@ -1,0 +1,3 @@
+include ':comLib'
+include ':app'
+rootProject.name = "Library"
