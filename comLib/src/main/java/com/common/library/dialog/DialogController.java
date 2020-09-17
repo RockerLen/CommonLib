@@ -29,7 +29,11 @@ public class DialogController {
      */
     public static void init(Context context) {
         DialogSettings.init();
-        DialogSettings.checkRenderscriptSupport(context);
+//        defaultConfig {
+//            renderscriptTargetApi 14
+//            renderscriptSupportModeEnabled true    // Enable RS support
+//        }
+        DialogSettings.checkRenderscriptSupport(context); //高斯模糊
         //可以切换风格
         DialogSettings.style = DialogSettings.STYLE.STYLE_IOS;
         DialogSettings.theme = DialogSettings.THEME.LIGHT;

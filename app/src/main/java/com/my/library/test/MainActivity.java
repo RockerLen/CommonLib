@@ -1,38 +1,36 @@
 package com.my.library.test;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.common.library.Test;
-import com.common.library.dialog.DialogController;
-import com.kongzue.dialog.interfaces.OnDialogButtonClickListener;
-import com.kongzue.dialog.interfaces.OnInputDialogButtonClickListener;
-import com.kongzue.dialog.interfaces.OnMenuItemClickListener;
-import com.kongzue.dialog.util.BaseDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.common.library.util.PictureSelectorUtil;
+import com.luck.picture.lib.entity.LocalMedia;
+import com.luck.picture.lib.listener.OnResultCallbackListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    private List<LocalMedia> list;
+
+    String path = "/storage/emulated/0/DCIM/Camera/VID_20200917_15090740.mp4";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DialogController.init(this);
-
-        //Test.test(getApplication());
+        list = new ArrayList<>();
 
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DialogController.showBottomMenu(MainActivity.this, "选择性别", new String[]{"男", "女"}, new OnMenuItemClickListener() {
-                    @Override
-                    public void onClick(String text, int index) {
-                        Log.e("..........", text);
-                    }
-                });
+
             }
         });
     }
