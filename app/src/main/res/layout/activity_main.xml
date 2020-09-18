@@ -13,6 +13,11 @@
         android:layout_width="100dp"
         android:layout_height="50dp" />
 
+    <com.common.library.widget.ImageBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    </com.common.library.widget.ImageBanner>
 
 
 </LinearLayout>
