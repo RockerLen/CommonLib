@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import com.scwang.smart.refresh.footer.ClassicsFooter;
 import com.scwang.smart.refresh.header.ClassicsHeader;
 import com.scwang.smart.refresh.layout.SmartRefreshLayout;
+import com.scwang.smart.refresh.layout.listener.OnRefreshLoadMoreListener;
 
 /**
  * 具备下拉刷新，上拉加载的能力
@@ -31,5 +32,13 @@ public class PullRefreshLayout extends SmartRefreshLayout {
         SmartRefreshLayout.LayoutParams paramsFoot = new SmartRefreshLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
         footer.setLayoutParams(paramsFoot);
         setRefreshFooter(footer);
+    }
+
+    public void setRefreshListener(OnRefreshLoadMoreListener listener) {
+        setOnRefreshLoadMoreListener(listener);
+    }
+
+    public void setNoMoreData() {
+        finishLoadMoreWithNoMoreData();
     }
 }

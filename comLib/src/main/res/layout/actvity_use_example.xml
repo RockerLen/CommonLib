@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="进度条" />
+
+    <com.common.library.view.ComProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        app:bootstrapMaxProgress="100"
+        app:bootstrapProgress="60"
+        app:progressBackgroundColor="@color/white"
+        app:progressColor="@color/app_color_blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="输入框" />
+
+    <com.common.library.view.FrameEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="1822656"
+        android:textSize="14sp"
+        app:borderColor="@color/app_color_blue"
+        app:borderWidth="1px"
+        app:cornerRadius="5dp"
+        app:roundedCorners="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="文字按钮" />
+
+    <com.common.library.view.TextBtn
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="点击"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="5dp"
+        app:fillType="solid"
+        app:solidColor="@color/app_color_blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Loading" />
+
+    <com.common.library.view.LoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:loading_color="@color/black"
+        app:loading_size="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="水波纹触摸效果" />
+
+    <com.common.library.view.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_alpha="40"
+        app:rv_type="rectangle">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white" />
+    </com.common.library.view.RippleView>
+
+</LinearLayout>

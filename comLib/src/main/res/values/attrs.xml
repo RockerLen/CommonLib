@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common attributes -->
+
+    <attr name="fillType" format="enum">
+        <enum name="solid" value="0"/>
+        <enum name="stroke" value="1"/>
+    </attr>
+
+    <attr name="showOutline" format="boolean"/>
+    <attr name="roundedCorners" format="boolean"/>
+    <attr name="hasBorder" format="boolean"/>
+    <attr name="checkedButton" format="reference"/>
+    <attr name="checked" format="boolean"/>
+    <attr name="dropdownResource" format="reference"/>
+    <attr name="itemHeight" format="dimension"/>
+    <attr name="strongText" format="string"/>
+    <attr name="messageText" format="string"/>
+    <attr name="badgeText" format="string"/>
+    <attr name="dismissible" format="boolean"/>
+    <attr name="solidColor" format="color"/>
+    <attr name="cornerRadius" format="dimension"/>
+    <attr name="borderWidth" format="dimension" />
+    <attr name="borderColor" format="color"/>
+
+    <declare-styleable name="ComProgressBar">
+        <attr name="striped" format="boolean"/>
+        <attr name="animated" format="boolean"/>
+        <attr name="bootstrapProgress" format="integer"/>
+        <attr name="bootstrapMaxProgress" format="integer"/>
+        <attr name="bootstrapshowPercentage" format="boolean"/>
+        <attr name="roundedCorners"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="progressBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="FrameEditText">
+        <attr name="roundedCorners"/>
+        <attr name="cornerRadius"/>
+        <attr name="borderWidth"/>
+        <attr name="borderColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextBtn">
+        <attr name="roundedCorners"/>
+        <attr name="fillType"/>
+        <attr name="solidColor"/>
+        <attr name="cornerRadius"/>
+        <attr name="borderWidth"/>
+        <attr name="borderColor"/>
+    </declare-styleable>
+
+    <attr name="QMUILoadingStyle" format="reference"/>
+
+    <declare-styleable name="LoadingView">
+        <attr name="loading_size" format="dimension"/>
+        <attr name="loading_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer"/>
+        <attr name="rv_rippleDuration" format="integer"/>
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0"/>
+            <enum name="doubleRipple" value="1"/>
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+
+    </declare-styleable>
+</resources>
+

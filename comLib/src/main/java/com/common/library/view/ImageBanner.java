@@ -1,16 +1,14 @@
-package com.common.library.widget;
+package com.common.library.view;
 
 import android.content.Context;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
-import com.common.library.R;
 import com.common.library.build.IndicatorBuilder;
+import com.common.library.util.ComUtil;
 import com.youth.banner.Banner;
 import com.youth.banner.adapter.BannerImageAdapter;
 import com.youth.banner.holder.BannerImageHolder;
@@ -54,7 +52,7 @@ public class ImageBanner extends Banner {
         setIndicatorSpace(20);
         getIndicator().getIndicatorConfig().getMargins().bottomMargin = 40;
         setPageTransformer(new ScaleInTransformer());
-        defaultDrawable = new ColorDrawable(ContextCompat.getColor(context, R.color.app_color_white_transparent));
+        defaultDrawable = ComUtil.getDefaultDrawable(context);
         imgPaths = new ArrayList<>();
         adapter = new BannerImageAdapter<String>(imgPaths) {
             @Override

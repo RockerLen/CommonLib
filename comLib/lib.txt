@@ -1,3 +1,6 @@
+HotLib
+https://github.com/SenhLinsh/Android-Hot-Libraries#android-hot-libraries
+
 PhotoView
 https://github.com/chrisbanes/PhotoView
 
@@ -9,3 +12,9 @@ https://github.com/bumptech/glide
 
 BlurKit
 https://github.com/CameraKit/blurkit-android
+
+UtilCode
+https://github.com/Blankj/AndroidUtilCode/blob/master/lib/utilcode/README-CN.md
+
+AdapterHelper
+https://github.com/CymChad/BaseRecyclerViewAdapterHelper

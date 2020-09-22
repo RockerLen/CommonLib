@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".MainActivity">
@@ -13,11 +12,17 @@
         android:layout_width="100dp"
         android:layout_height="50dp" />
 
-    <com.common.library.widget.ImageBanner
-        android:id="@+id/banner"
+    <com.common.library.pull.DragLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp">
-    </com.common.library.widget.ImageBanner>
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"/>
+
+    </com.common.library.pull.DragLayout>
 
 
 </LinearLayout>

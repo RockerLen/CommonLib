@@ -1,4 +1,4 @@
-package com.common.library.dialog;
+package com.common.library.controller;
 
 import android.content.Context;
 import android.view.View;

@@ -10,6 +10,16 @@ import okhttp3.internal.platform.Platform;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/**
+ * 输出请求日志的Retrofit工具类
+ * <p>
+ * 引用到的库
+ * compileOnly 'com.squareup.retrofit2:retrofit:2.9.0'
+ * compileOnly 'com.squareup.retrofit2:converter-gson:2.7.0'
+ * compileOnly('com.github.ihsanbal:LoggingInterceptor:3.1.0') {
+ * exclude group: 'org.json', module: 'json'
+ * }
+ */
 public class RetrofitUtil {
     private static final String REQUEST_TAG = "COM_REQUEST";
     private static final String RESPONSE_TAG = "COM_RESPONSE";
@@ -42,8 +52,8 @@ public class RetrofitUtil {
             build.setLevel(Level.NONE);
         }
 
+        addCommonParams(build);
         LoggingInterceptor interceptor = build.build();
-        addCommonParams(interceptor);
 
         OkHttpClient.Builder httpClientBuilder = new OkHttpClient.Builder()
                 .connectTimeout(CONNECT_TIME_OUT, TimeUnit.SECONDS)
@@ -59,11 +69,14 @@ public class RetrofitUtil {
     /**
      * 添加公共请求参数
      *
-     * @param interceptor
+     * @param build
      */
-    private void addCommonParams(LoggingInterceptor interceptor) {
-        //interceptor.addHeader("cityCode","53")
-        //.addQueryParam("moonStatus", "crescent")
+    private void addCommonParams(LoggingInterceptor.Builder build) {
+//        build.addHeader("cityCode", "53")
+//                .addQueryParam("moonStatus", "crescent");
     }
 
+    public Retrofit getRetrofit() {
+        return retrofit;
+    }
 }
