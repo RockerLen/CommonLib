@@ -35,7 +35,7 @@ public class PictureSelectorUtil {
                 .minimumCompressSize(100)
                 .synOrAsy(false)
                 .selectionData(hasChose)
-                .theme(R.style.picture_white_style)
+                //.theme(R.style.picture_white_style)
                 .isMaxSelectEnabledMask(true) //开启蒙层效果
                 .setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED)
                 .selectionData(hasChose)
@@ -56,7 +56,7 @@ public class PictureSelectorUtil {
                 .selectionMode(PictureConfig.MULTIPLE)
                 .maxSelectNum(9)
                 .selectionData(hasChose)
-                .theme(R.style.picture_white_style)
+                //.theme(R.style.picture_white_style)
                 .isMaxSelectEnabledMask(true) //开启蒙层效果
                 .setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED)
                 .selectionData(hasChose)
@@ -82,7 +82,7 @@ public class PictureSelectorUtil {
                 .maxVideoSelectNum(9)
                 .isWithVideoImage(true)
                 .selectionData(hasChose)
-                .theme(R.style.picture_white_style)
+                //.theme(R.style.picture_white_style)
                 .isMaxSelectEnabledMask(true) //开启蒙层效果
                 .setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED)
                 .selectionData(hasChose)

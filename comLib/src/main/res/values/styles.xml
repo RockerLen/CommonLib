@@ -1,9 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <attr name="picture.ac_preview.bottom.bg" format="reference|color" />
+    <attr name="picture.ac_preview.complete.textColor" format="reference|color" />
+    <attr name="picture.ac_preview.title.bg" format="reference|color" />
+    <attr name="picture.ac_preview.title.textColor" format="reference|color" />
+    <attr name="picture.arrow_down.icon" format="reference" />
+    <attr name="picture.arrow_up.icon" format="reference" />
+    <attr name="picture.bottom.bg" format="reference|color" />
+    <attr name="picture.checked.style" format="reference" />
+    <attr name="picture.complete.textColor" format="reference|color" />
+    <attr name="picture.crop.status.color" format="reference|color" />
+    <attr name="picture.crop.title.color" format="reference|color" />
+    <attr name="picture.crop.toolbar.bg" format="reference|color" />
+    <attr name="picture.folder_checked_dot" format="reference" />
+    <attr name="picture.leftBack.icon" format="reference" />
+    <attr name="picture.num.style" format="reference" />
+    <attr name="picture.preview.leftBack.icon" format="reference" />
+    <attr name="picture.preview.textColor" format="reference|color" />
+    <attr name="picture.right.textColor" format="reference|color" />
+    <attr name="picture.status.color" format="reference|color" />
+    <attr name="picture.statusFontColor" format="boolean" />
+    <attr name="picture.style.checkNumMode" format="boolean" />
+    <attr name="picture.style.numComplete" format="boolean" />
+    <attr name="picture.title.textColor" format="reference|color" />
+
 
     <style name="BaseNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar" />
 
-    <!--白色主题样式，，注意每一项都不能少-->
     <style name="picture.white.style" parent="BaseNoActionBarTheme">
         <!-- Customize your theme here. -->
         <!--标题栏背景色-->
@@ -23,7 +46,7 @@
         <!--标题栏右边文字-->
         <item name="picture.right.textColor">@color/app_color_black</item>
         <!--图片列表勾选样式-->
-        <item name="picture.checked.style">@drawable/picture_checkbox_selector</item>
+        <item name="picture.checked.style">@drawable/picture_checkbox_selector_com</item>
         <!--开启图片列表勾选数字模式,开启的话勾选样式要换-->
         <item name="picture.style.checkNumMode">false</item>
         <!--选择图片样式0/9-->
@@ -31,20 +54,20 @@
         <!--图片列表底部背景色-->
         <item name="picture.bottom.bg">@color/app_color_fa</item>
         <!--图片列表预览文字颜色-->
-        <item name="picture.preview.textColor">@color/picture_list_sina_text_color</item>
+        <item name="picture.preview.textColor">@drawable/picture_list_sina_text_color</item>
         <!--图片列表已完成文字颜色-->
-        <item name="picture.complete.textColor">@color/picture_list_sina_text_color</item>
+        <item name="picture.complete.textColor">@drawable/picture_list_sina_text_color</item>
         <!--图片已选数量圆点背景色-->
-        <item name="picture.num.style">@drawable/picture_num_oval</item>
+        <item name="picture.num.style">@drawable/picture_num_oval_com</item>
         <!--预览界面标题栏背景色-->
         <item name="picture.ac_preview.title.bg">@color/app_color_white</item>
         <!--预览界面标题文字颜色-->
         <item name="picture.ac_preview.title.textColor">@color/app_color_black</item>
         <!--预览界面已完成文字颜色-->
-        <item name="picture.ac_preview.complete.textColor">@color/picture_list_sina_text_color
+        <item name="picture.ac_preview.complete.textColor">@drawable/picture_list_sina_text_color
         </item>
         <!--预览界面底部背景色-->
-        <item name="picture.ac_preview.bottom.bg">@color/picture_color_fa</item>
+        <item name="picture.ac_preview.bottom.bg">@color/picture_color_fa_com</item>
         <!--预览界面返回箭头-->
         <item name="picture.preview.leftBack.icon">@drawable/ic_back_arrow</item>
         <!--裁剪页面标题背景色-->
@@ -54,6 +77,7 @@
         <!--裁剪页面标题文字颜色-->
         <item name="picture.crop.title.color">@color/app_color_black</item>
         <!--相册文件夹列表选中图标-->
-        <item name="picture.folder_checked_dot">@drawable/picture_orange_oval</item>
+        <item name="picture.folder_checked_dot">@drawable/picture_orange_oval_com</item>
     </style>
+
 </resources>
